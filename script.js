@@ -34,7 +34,11 @@ function generateTodo(data) {
 }
 
 function removeToDo() {
-    this.parentElement.remove()
+    this.parentElement.style.transformOrigin = 'right'
+    this.parentElement.style.transform = 'scale(0)'
+    setTimeout(() => {
+        this.parentElement.remove()
+    }, 200);
 }
 
 function removeAllTodos(){

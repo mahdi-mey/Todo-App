@@ -76,7 +76,16 @@ input[type="text"]:focus{
   border-radius: 5px;
   outline: 1px solid #211f39;
   margin-top: 1rem;
+  transition: all 0.1s linear;
+  animation: slide-in 0.1s forwards; 
+  scale: 0;
+  transform-origin: left;
 }
 .delete:hover{
   cursor: pointer;
+}
+@keyframes slide-in {
+  to{
+    scale: 1;
+  }
 }
