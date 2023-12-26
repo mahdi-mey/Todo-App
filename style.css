@@ -75,6 +75,7 @@ input[type="text"]:focus{
   padding: 0 2rem;
   border-radius: 5px;
   outline: 1px solid #211f39;
+  margin-top: 1rem;
 }
 .delete:hover{
   cursor: pointer;
