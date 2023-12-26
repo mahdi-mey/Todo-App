@@ -9,9 +9,8 @@ let todosArray = []
 
 function addNewTodo(title) {
     let newTodoObj = {
-        id: todosArray.length + 1,
+        id: todosArray.length,
         title: title,
-        complete: false,
     }
     todosArray.push(newTodoObj)
     generateTodo(newTodoObj)
@@ -31,7 +30,11 @@ function generateTodo(data) {
     newToDoLi.append(newToDoSpan, newToDoTrash)
 
     parentElement.append(newToDoLi)
-    newToDoTrash.setAttribute('onclick', `removeToDo(${data.id})`)
+    newToDoTrash.addEventListener('click', removeToDo)
+}
+
+function removeToDo() {
+    this.parentElement.remove()
 }
 
 inputElement.addEventListener('keydown', (event) => {
