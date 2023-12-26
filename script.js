@@ -49,6 +49,11 @@ inputElement.addEventListener('keydown', (event) => {
     let newTodoValue = inputElement.value
 
     if (event.keyCode === 13) {
+
+        if(!inputElement.value){
+            return
+        }
+
         addNewTodo(newTodoValue)
         inputElement.value = ''
     }
