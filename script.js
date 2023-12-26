@@ -37,6 +37,10 @@ function removeToDo() {
     this.parentElement.remove()
 }
 
+function removeAllTodos(){
+    parentElement.innerHTML = ''
+}
+
 inputElement.addEventListener('keydown', (event) => {
     let newTodoValue = inputElement.value
 
@@ -45,3 +49,4 @@ inputElement.addEventListener('keydown', (event) => {
         inputElement.value = ''
     }
 })
+clearBtn.addEventListener('click', removeAllTodos)
