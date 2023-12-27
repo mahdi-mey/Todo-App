@@ -31,10 +31,12 @@ function generateTodo(data) {
 
     parentElement.append(newToDoLi)
     newToDoTrash.addEventListener('click', removeToDo)
+    setTimeout(() => {
+        newToDoLi.style.transformOrigin = 'right'
+    }, 200);
 }
 
 function removeToDo() {
-    this.parentElement.style.transformOrigin = 'right'
     this.parentElement.style.transform = 'scale(0)'
     setTimeout(() => {
         this.parentElement.remove()
