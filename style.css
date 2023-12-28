@@ -12,6 +12,8 @@ body {
   max-width: 500px;
   margin-top: 10vh;
   margin-inline: auto;
+  /* outline: 1px solid red; */
+  padding: 0 1rem;
 }
 .container form {
     text-align: center;
