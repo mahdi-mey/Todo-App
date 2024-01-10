@@ -11,4 +11,4 @@ This repository contains a simple yet intuitive To-Do application built using HT
 
 ## Preview
 
-![To-Do App Preview]([link-to-app-preview-image](https://mahdi-mey.github.io/Todo-App/))
+[To-Do App Preview]([link-to-app-preview-image](https://mahdi-mey.github.io/Todo-App/))
